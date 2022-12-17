@@ -1076,7 +1076,6 @@ footer .container {
 }
 
 
-
 @media screen and (max-width: 768px){
     body, html {
         font-size: 14px;
@@ -1084,11 +1083,11 @@ footer .container {
     }
 
     .header {
-        height: 58px;
+        height: 64px;
     }
 
     .header-flex {
-        padding-left: 40px;
+        padding-left: 24px;
         padding-right: 40px;
     }
     
@@ -1141,18 +1140,30 @@ footer .container {
     }
 
     .kuda-illustration--center {
-      margin-top: 50px;
+      margin-top: 40px;
       display: block;
+    }
+
+    .kuda-phone--illustration svg {
+      position: relative;
+      top: -1%;
+      width: calc(100% - 55px);
+      margin: auto;
+      height: auto;
     }
 
     .main-content_left h1 {
       text-align: center;
       font-size: 2.5rem;
       line-height: 1.33;
+      margin-bottom: 10px;
     }
 
     .main-content_left p {
       text-align: center;
+      font-size: 1.23rem;
+      margin-bottom: 10px;
+      font-weight: 600;
     }
 
     .kuda-app_badges {
@@ -1166,16 +1177,6 @@ footer .container {
        margin-right: 11px;
     }   
 
-    
-
-    .card-icon_spacing {
-      display: flex;
-      align-items: center;
-    }
-
-    .card-bottom .card:not(:last-child) {
-      margin-right: 0px;
-    }
 
     .section {
       margin-top: 120px;
@@ -1215,6 +1216,12 @@ footer .container {
     .section-content_right {
       width: 100%;
       margin-top: 50px;
+    }
+
+    .hasAnimation {
+      max-width: 340px;
+      margin-right: auto;
+      margin-left: auto;
     }
 
     .section-illustration svg {
@@ -1327,6 +1334,7 @@ footer .container {
 
 }
 
+
 @media screen and (max-width: 600px) {
     h1 {
       font-size: 200px;
@@ -1336,3 +1344,12 @@ footer .container {
 @media screen and (max-width: 375px) {
     
 }
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .hasAnimation, .kuda-section--illustration>[aria-label=animation] {
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
