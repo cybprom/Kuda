@@ -1087,12 +1087,16 @@ footer .container {
     }
 
     .header-flex {
-        padding-left: 24px;
+        padding-left: 22px;
         padding-right: 40px;
     }
     
     h1 {
       font-size: 1.6rem;
+    }
+
+    .title-bottom--spacing {
+      margin-bottom: 10px;
     }
 
     .logo svg {
@@ -1194,6 +1198,7 @@ footer .container {
 
     .section-content_left h1 {
       text-align: center;
+      font-size: 2rem;
     }
 
     .section-content_left p {
@@ -1205,6 +1210,10 @@ footer .container {
       margin-left: auto;
       /* display: flex;
       flex-direction: column; */
+    }
+
+    .section-max {
+      max-width: 350px;
     }
 
     .section-link {
@@ -1277,6 +1286,11 @@ footer .container {
 
     .cta-illustration {
       display: none;
+    }
+
+    footer .container {
+      padding-left: 20px;
+      padding-right: 20px;
     }
 
     .footer-nav {
