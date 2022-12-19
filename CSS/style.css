@@ -152,6 +152,11 @@ a {
   font-size: 0.875rem;
 }
 
+button {
+  border: none;
+  outline: none;
+}
+
 .mobile-toggle {
     display: none;
     width: 23px;
@@ -173,10 +178,23 @@ a {
     background-color: #000;
     border-radius: 4px;
     display: block;
+    transition: all 0.5s;
 }
 
 .hamburger-bottom {
     transform: translateY(9px);
+}
+
+.open {
+  transform: translateY(0);
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translate(6px);
+}
+
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translate(-6px);
 }
 
 .menu-link {
