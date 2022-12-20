@@ -1164,6 +1164,16 @@ footer .container {
   }
 } */
 
+@keyframes slidein-out {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 
 
 /*    BREAKPOINTS    */
@@ -1224,6 +1234,7 @@ footer .container {
       display: flex;
       flex-direction: column;
       margin-left: auto;
+      animation: slidein-out .6s cubic-bezier(.455, .03, 0, 1) forwards;
     }
 
     .menu-action {
