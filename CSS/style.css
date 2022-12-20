@@ -168,6 +168,7 @@ button {
     position: relative;
     width: 23px;
     height: 20px;
+    z-index: 9999;
 }
 
 .hamburger-top,
@@ -179,6 +180,7 @@ button {
     background-color: #000;
     border-radius: 4px;
     display: block;
+    z-index: 9999;
     transition: all 0.5s;
 }
 
@@ -990,6 +992,85 @@ footer .container {
   margin-bottom: 0rem;
 }
 
+/*     Nav Menu   */
+.menu-action {
+  /* margin-top: 4rem; */
+  position: fixed;
+  top: 50px;
+  background-color: #fff;
+  width: 100%;
+  padding: 20px;
+}
+
+.menu-btn {
+  background: var(--primaryColor);
+  color: var(--whiteColor);
+  padding: 15px;
+  font-weight: 700;
+  font-size: 13px;
+  height: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 1rem;
+  width: 100%;
+  max-width: 135px;
+  line-height: 1;
+}
+
+.btn-v2 {
+  background: #dfe3ff;
+  color: var(--primaryColor);
+}
+
+#menu {
+  display: none;
+}
+
+.nav-menu {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+
+.nav-menu .nav-content:nth-child(2) {
+  margin-left: auto;
+  padding-right: 0;
+}
+
+.nav-content {
+  margin-top: 30px;
+  width: calc(50% - 15px);
+}
+
+.nav-content p {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--primaryColor);
+}
+
+.menu-item {
+  margin-top: 14px;
+}
+
+.menu-item a {
+  color: var(--blackColor);
+}
+
+.menu-item li {
+  font-size: 1rem;
+}
+
+.menu-item .menu-link {
+  padding: 0 0;
+}
+
+
+.menu-item li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+
+
 /*    MOBILE GET APP   */
 
 .mobile-get_app {
@@ -1109,6 +1190,33 @@ footer .container {
 
     .main-content_left, .main-content_right {
       width: 100%;
+    }
+
+    .mobile-menu {
+      position: fixed;
+      top: 50px;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: 999;
+      overflow-y: scroll;
+      background-color: #fff;
+      /* background: rgba(64,25,109,.2); */
+    }
+
+    .menu-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin-left: auto;
+    }
+
+    .nav-menu {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 500px;
     }
 }
 
